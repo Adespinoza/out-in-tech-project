@@ -1,30 +1,17 @@
 import React, { useRef } from 'react';
-import Fatline from './Fatline';
+import Jumbo from './Jumbo';
 import * as THREE from 'three';
-import { useFrame } from 'react-three-fiber';
+import Foods from './Foods';
 
-function Scene() {
-  let group = useRef();
-  const numLines = 100;
-  const lines = new Array(numLines).fill();
-  let theta = 0;
-
-  // Hook into the render loop and rotate the scene a bit
-  useFrame(() =>
-    group.current.rotation.set(
-      0,
-      5 * Math.sin(THREE.Math.degToRad((theta += 0.02))),
-      0
-    )
-  );
-
+const Scene = ({ data }) => {
   return (
-    <group ref={group}>
-      {lines.map((_, index) => (
-        <Fatline key={index} />
-      ))}
-    </group>
+    <>
+      <Jumbo data={data} />
+      <group>
+        <Foods data={data} />
+      </group>
+    </>
   );
-}
+};
 
 export default Scene;

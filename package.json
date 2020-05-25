@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --mode development",
+    "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,10 +13,12 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.1",
+    "@tim-soft/react-dat-gui": "^4.0.11",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.4.2",
+    "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-node": "^4.0.0",
@@ -32,18 +34,21 @@
     "html-loader": "^1.0.0",
     "html-webpack-plugin": "^4.0.4",
     "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "prettier": "^2.0.4",
+    "raw-loader": "^4.0.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
     "svg-inline-loader": "^0.8.2",
+    "url-loader": "^4.1.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "bulma": "^0.8.1",
+    "gltf-webpack-loader": "^1.0.6",
     "react": "^16.13.1",
+    "react-dat-gui": "^4.0.3",
     "react-dom": "^16.13.1",
     "react-three-fiber": "^4.0.27",
     "three": "^0.115.0",

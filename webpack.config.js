@@ -26,14 +26,20 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['to-string-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'],
       },
+      // Images
       {
-        test: /\.svg$/,
-        loader: 'file-loader',
+        test: /\.(jpg|jpeg|png|gif|svg|bin)$/,
+        use: [
+          {
+            loader: 'url-loader',
+          },
+        ],
       },
+      // Models
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(glb|gltf|fbx|OBJ|blob|)$/,
         use: [
           {
             loader: 'file-loader',

@@ -1,0 +1,19 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.react-dat-gui-demo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.react-dat-gui-relative-position {
+  z-index: 1;
+  position: relative;
+  margin-top: 2em;
+  width: 300px;
+  min-width: 300px;
+  right: 0;
+}
