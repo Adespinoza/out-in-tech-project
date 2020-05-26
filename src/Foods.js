@@ -1,5 +1,4 @@
 import React from 'react';
-// import { MeshBasicMaterial } from 'three';
 import FoodItem from './FoodItem';
 
 const Foods = ({ data }) => {
