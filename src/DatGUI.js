@@ -1,11 +1,10 @@
-import React, { Component, Suspense } from 'react';
-import DatGui, { DatNumber, DatString } from '@tim-soft/react-dat-gui';
+import React, { Component } from 'react';
+import DatGui, { DatNumber } from '@tim-soft/react-dat-gui';
 import CanvasWrapper from './CanvasWrapper';
 
 class DatGUI extends Component {
   state = {
     data: {
-      string: 'GAY RIGHTS',
       speed: 1,
       number: 10,
     },
@@ -28,7 +27,6 @@ class DatGUI extends Component {
             onUpdate={this.handleUpdate}
             className='react-dat-gui-relative-position'
           >
-            <DatString path='string' label='String' />
             <DatNumber
               path='number'
               label='Number'

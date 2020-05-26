@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useRef } from 'react';
 import { useLoader } from 'react-three-fiber';
-import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Burger from './assets/out.glb';
 import { useFrame } from 'react-three-fiber';

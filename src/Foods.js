@@ -8,12 +8,12 @@ const Foods = ({ data }) => {
     const y = -10 + Math.random() * 20;
     const z = -5 + Math.random() * 10;
 
-    const bird = ['Stork', 'Parrot', 'Flamingo'][Math.round(Math.random() * 2)];
+    const combos = ['a', 'b', 'c'][Math.round(Math.random() * 2)]; // sets random speed
 
     let factor =
-      bird === 'Stork'
+      combos === 'a'
         ? 0.55 + Math.random()
-        : bird === 'Flamingo'
+        : combos === 'b'
         ? 0.35 + Math.random()
         : 1 + Math.random() - 0.5;
 

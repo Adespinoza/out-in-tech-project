@@ -2,13 +2,8 @@ import React, { useRef } from 'react';
 import { useFrame } from 'react-three-fiber';
 import Text from './Text';
 
-const Jumbo = ({ data }) => {
+const Jumbo = () => {
   const ref = useRef();
-
-  const regex = /([A-Z])\s(?=[A-Z]\b)/g;
-
-  const arr = data.stringm s.toUpperCase().split(' ');
-  console.log(arr);
 
   useFrame(
     ({ clock }) =>
@@ -18,15 +13,12 @@ const Jumbo = ({ data }) => {
 
   return (
     <group ref={ref} position={[10, 10, -10]}>
-      {arr.map(word => 
-      return (
-        <Text key={word} hAlign='left' position={[-5, 4, 0]}>
-          word
-        </Text>);
-      )}
-      {/* <Text hAlign='left' position={[0, 0, 0]}>
+      <Text hAlign='left' position={[-4, 5, 0]}>
+        GAY
+      </Text>
+      <Text hAlign='left' position={[0, 0, 0]}>
         RIGHTS
-      </Text> */}
+      </Text>
     </group>
   );
 };

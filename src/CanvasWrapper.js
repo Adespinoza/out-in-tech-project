@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import Scene from './Scene';
 import { Canvas } from 'react-three-fiber';
+import PropTypes from 'prop-types';
 
 const CanvasWrapper = ({ data }) => {
   return (
@@ -21,6 +22,10 @@ const CanvasWrapper = ({ data }) => {
       </Suspense>
     </Canvas>
   );
+};
+
+CanvasWrapper.propTypes = {
+  data: PropTypes.object,
 };
 
 export default CanvasWrapper;

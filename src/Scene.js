@@ -1,17 +1,21 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Jumbo from './Jumbo';
-import * as THREE from 'three';
 import Foods from './Foods';
+import PropTypes from 'prop-types';
 
 const Scene = ({ data }) => {
   return (
     <>
-      <Jumbo data={data} />
+      <Jumbo />
       <group>
         <Foods data={data} />
       </group>
     </>
   );
+};
+
+Scene.propTypes = {
+  data: PropTypes.object,
 };
 
 export default Scene;
