@@ -51,6 +51,6 @@
     "react-dat-gui": "^4.0.3",
     "react-dom": "^16.13.1",
     "react-three-fiber": "^4.0.27",
-    "three": "^0.115.0"
+    "three": "^0.125.0"
   }
 }
